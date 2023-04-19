@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ArteLista</string>
+    <string name="hint_UserName">Username</string>
+    <string name="hint_Password">Password</string>
+    <string name="strLogin">Login</string>
+    <string name="strNoTieneCuenta">Don\'t have an account?</string>
+    <string name="strCreaUna">Create Account</string>
+    <string name="strEtiqLogo">ArteLista</string>
+    <string name="stremail">Email</string>
+    <string name="strCrearCuenta">Create Account</string>
+    <string name="strConfirmarPassword">Confirm Password</string>
+</resources>
