@@ -16,8 +16,8 @@ private lateinit var binding: ActivityMenuBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-     binding = ActivityMenuBinding.inflate(layoutInflater)
-     setContentView(binding.root)
+        binding = ActivityMenuBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         val navView: BottomNavigationView = binding.navView
 
@@ -25,7 +25,7 @@ private lateinit var binding: ActivityMenuBinding
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         val appBarConfiguration = AppBarConfiguration(setOf(
-            R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications))
+            R.id.navHome, R.id.navGaleria, R.id.navEvento, R.id.navArtista))
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
     }

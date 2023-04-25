@@ -2,24 +2,26 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
-
+    android:id="@+id/navMenuArteLista"
+    app:startDestination="@+id/navHome">
     <fragment
-        android:id="@+id/navigation_home"
+        android:id="@+id/navHome"
         android:name="com.example.login.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
-
+        android:label="@string/strHome"
+        tools:layout="@layout/fragment_inicio" />
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.example.login.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
-
+        android:id="@+id/navGaleria"
+        android:name="com.example.login.ui.Galeria.GaleriaFragment"
+        android:label="@string/strGaleria"
+        tools:layout="@layout/fragment_galeria" />
     <fragment
-        android:id="@+id/navigation_notifications"
+        android:id="@+id/navEvento"
         android:name="com.example.login.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:label="@string/strEvento"
+        tools:layout="@layout/fragment_evento" />
+    <fragment
+        android:id="@+id/navArtista"
+        android:name="com.example.login.ui.artista.ArtistaFragment"
+        android:label="@string/strArtista"
+        tools:layout="@layout/fragment_artista" />
 </navigation>

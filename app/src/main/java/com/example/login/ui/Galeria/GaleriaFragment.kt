@@ -1,4 +1,4 @@
-package com.example.login.ui.dashboard
+package com.example.login.ui.Galeria
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,11 +7,11 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.example.login.databinding.FragmentDashboardBinding
+import com.example.login.databinding.FragmentGaleriaBinding
 
-class DashboardFragment : Fragment() {
+class GaleriaFragment : Fragment() {
 
-private var _binding: FragmentDashboardBinding? = null
+private var _binding: FragmentGaleriaBinding? = null
   // This property is only valid between onCreateView and
   // onDestroyView.
   private val binding get() = _binding!!
@@ -24,10 +24,10 @@ private var _binding: FragmentDashboardBinding? = null
     val dashboardViewModel =
             ViewModelProvider(this).get(DashboardViewModel::class.java)
 
-    _binding = FragmentDashboardBinding.inflate(inflater, container, false)
+    _binding = FragmentGaleriaBinding.inflate(inflater, container, false)
     val root: View = binding.root
 
-    val textView: TextView = binding.textDashboard
+    val textView: TextView = binding.textGaleria
     dashboardViewModel.text.observe(viewLifecycleOwner) {
       textView.text = it
     }

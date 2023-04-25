@@ -1,4 +1,4 @@
-package com.example.login.ui.dashboard
+package com.example.login.ui.Galeria
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

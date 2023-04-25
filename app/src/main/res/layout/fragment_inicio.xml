@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/img_arte1"
+    tools:context=".ui."
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enamorados del arte desde el 2004"
+        android:textAlignment="center"
+        android:textSize="@dimen/tamTexto4"
+        android:textStyle="bold"
+        android:gravity="center_horizontal" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="1,001,937 obras de arte 143,544 artistas"
+        android:textColor="@color/white"
+        android:textSize="@dimen/tamTexto3"
+        android:textStyle="bold"
+        android:gravity="center_horizontal" />
+</LinearLayout>

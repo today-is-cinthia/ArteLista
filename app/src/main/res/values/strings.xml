@@ -10,8 +10,11 @@
     <string name="strCrearCuenta">Crear Cuenta</string>
     <string name="strConfirmarPassword">Confirmar Password</string>
     <string name="title_activity_menu">activity_menu</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="strHome">Home</string>
+    <string name="strGaleria">Galeria</string>
+    <string name="strEvento">Eventos</string>
+    <string name="strArtista">Artista</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
 
