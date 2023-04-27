@@ -13,6 +13,7 @@ import com.example.artelista.adapter.adaptergaleria
 import com.example.artelista.model.evento
 import com.example.login.R
 import com.example.login.databinding.FragmentEventoBinding
+import com.example.login.model.artista
 
 class EventoFragment : Fragment(){
     private var fbinding: FragmentEventoBinding? = null
@@ -45,21 +46,22 @@ class EventoFragment : Fragment(){
         //--------------
         val Evento: ArrayList<evento> = ArrayList<evento>()
         //-------------
-        Evento.add(evento("Feria Cultura Mexicana", "Gastronomia","8:00"))
-        Evento.add(evento("Feria de libros", "Compra y venta","10:00"))
-        Evento.add(evento("Comics", "Feria","03:00"))
-        Evento.add(evento( "Ven y conoce tu ritmo", "Musica","11:00"))
-        Evento.add(evento("Super Marios", "Videojuegos","04:00"))
-        Evento.add(evento("Feria Cultura Mexicana", "Gastronomia","8:00"))
-        Evento.add(evento("Feria de libros", "Compra y venta","10:00"))
-        Evento.add(evento("Comics", "Feria","03:00"))
-        Evento.add(evento( "Ven y conoce tu ritmo", "Musica","11:00"))
-        Evento.add(evento("Super Marios", "Videojuegos","04:00"))
-        Evento.add(evento("Feria Cultura Mexicana", "Gastronomia","8:00"))
-        Evento.add(evento("Feria de libros", "Compra y venta","10:00"))
-        Evento.add(evento("Comics", "Feria","03:00"))
-        Evento.add(evento( "Ven y conoce tu ritmo", "Musica","11:00"))
-        Evento.add(evento("Super Marios", "Videojuegos","04:00"))
+
+        Evento.add(evento("Armando Jose Agguirre", "Oleo","8:00"))
+        Evento.add(evento("German Traña Obando", "Lapiz","10:00"))
+        Evento.add(evento("Pol Ledent", "Acrilico","03:00"))
+        Evento.add(evento("Maribel Flores", "Oleo","11:00"))
+        Evento.add(evento("Nana Tchelidze", "Canvas","04:00"))
+        Evento.add(evento("Armando Jose Agguirre", "Oleo","8:00"))
+        Evento.add(evento("German Traña Obando", "Lapiz","10:00"))
+        Evento.add(evento("Pol Ledent", "Acrilico","03:00"))
+        Evento.add(evento("Maribel Flores", "Oleo","11:00"))
+        Evento.add(evento("Nana Tchelidze", "Canvas","04:00"))
+        Evento.add(evento("Armando Jose Agguirre", "Oleo","8:00"))
+        Evento.add(evento("German Traña Obando", "Lapiz","10:00"))
+        Evento.add(evento("Pol Ledent", "Acrilico","03:00"))
+        Evento.add(evento("Maribel Flores", "Oleo","11:00"))
+        Evento.add(evento("Nana Tchelidze", "Canvas","04:00"))
         return Evento
     }
 }
