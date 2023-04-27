@@ -1,19 +1,20 @@
 package com.example.login.ui.Galeria
 
 import android.app.Activity
+import android.graphics.Color
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.LinearLayout
-import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.artelista.adapter.adaptergaleria
 import com.example.login.R
 import com.example.login.databinding.FragmentGaleriaBinding
+import com.example.login.databinding.FragmentGaleriadetBinding
 import com.example.login.model.galeria
 
 class GaleriaFragment : Fragment() {
@@ -28,14 +29,23 @@ private var fbinding: FragmentGaleriaBinding? = null
     container: ViewGroup?,
     savedInstanceState: Bundle?
   ): View {
-    fbinding = FragmentGaleriaBinding.inflate(inflater, container, false)
-      val root: View = binding.root
+      fbinding = FragmentGaleriaBinding.inflate(inflater, container, false)
+      val view: View = binding.root
 
-      val reciclergaleria: RecyclerView = fbinding!!.rvGaleria
+      //--------------
+      //- Personalizar el toolbar
+      val toolbar: Toolbar = fbinding!!.tbgaleria
+      (activity as AppCompatActivity).setSupportActionBar(toolbar)
+      toolbar.setTitle(getString(R.string.strGaleria))
+      toolbar.setTitleTextColor(Color.WHITE)
+      //------------
+
+      //------------
+      val reciclergaleria :RecyclerView = fbinding!!.rvGaleria
       reciclergaleria.layoutManager = LinearLayoutManager(context)
       val adaptergaleria = adaptergaleria(getGaleria(), R.layout.item_galeria, Activity())
       reciclergaleria.adapter = adaptergaleria
-    return root
+      return view
   }
 
 override fun onDestroyView() {

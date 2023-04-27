@@ -8,8 +8,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
-import com.example.artelista.R
-import com.example.artelista.model.galeria
+import com.example.artelista.model.evento
 import com.example.login.R
 import com.example.login.model.galeria
 import com.squareup.picasso.Picasso
@@ -30,24 +29,24 @@ class adaptergaleria(Galerias: ArrayList<galeria>, resource:Int, activity:Activi
         val view = LayoutInflater.from(parent.context).inflate(resource, parent, false)
         return GaleriaViewHolder(view)
     }
-
-
     override fun onBindViewHolder(holder: GaleriaViewHolder, position: Int) {
         val galeria: galeria = galerias[position]
         holder.tvArtistaGaleria.setText(galeria.getartistagaleria())
         holder.tvPrecioGaleria.setText(galeria.getpreciogaleria())
         holder.tvTituloGaleria.setText(galeria.gettitulogaleria())
         Picasso.get().load(galeria.getimagengaleria()).into(holder.imgGaleria)
-       /* holder.itemView.setOnClickListener {
+       holder.itemView.setOnClickListener {
             Navigation.findNavController(holder.itemView).navigate(
-                R.id.fragment_galeriadet)
-        }*/
+                R.id.fragment_galeriadet
+            )
+        }
     }
-    //------------------------------
-    //------------------------------
     override fun getItemCount(): Int {
         return galerias.size
     }
+    //------------------------------
+    //------------------------------
+
     //Adapter versus la interface de cada item del recycler
     inner class GaleriaViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         //-------------------------
@@ -63,5 +62,6 @@ class adaptergaleria(Galerias: ArrayList<galeria>, resource:Int, activity:Activi
             imgGaleria = itemView.findViewById<View>(R.id.imgArteGaleria) as ImageView
         }
     }
+
 
 }

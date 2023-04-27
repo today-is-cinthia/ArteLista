@@ -1,4 +1,4 @@
-package com.example.login.ui.notifications
+package com.example.login.ui.Galeria.notifications
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -27,7 +27,7 @@ private var _binding: FragmentEventoBinding? = null
     _binding = FragmentEventoBinding.inflate(inflater, container, false)
     val root: View = binding.root
 
-    val textView: TextView = binding.textEvento
+    val textView: TextView = binding.tvToolEvento
     notificationsViewModel.text.observe(viewLifecycleOwner) {
       textView.text = it
     }

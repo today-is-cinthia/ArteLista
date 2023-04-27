@@ -10,6 +10,7 @@
     <dimen name="margen8">10dp</dimen>
     <dimen name="tam1">2dp</dimen>
     <dimen name="tam2">1dp</dimen>
+    <dimen name="tam3">250dp</dimen>
     <dimen name="tamtexto1">12sp</dimen>
     <dimen name="tamtexto2">16sp</dimen>
     <dimen name="tamTexto3">24sp</dimen>

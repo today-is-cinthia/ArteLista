@@ -13,15 +13,52 @@
         android:id="@+id/navGaleria"
         android:name="com.example.login.ui.Galeria.GaleriaFragment"
         android:label="@string/strGaleria"
-        tools:layout="@layout/fragment_galeria" />
+        tools:layout="@layout/fragment_galeria" >
+        <action
+            android:id="@+id/action_navGaleria_to_fragment_galeriadet"
+            app:destination="@id/fragment_galeriadet" />
+    </fragment>
     <fragment
         android:id="@+id/navEvento"
-        android:name="com.example.login.ui.notifications.NotificationsFragment"
+        android:name="com.example.login.ui.evento.EventoFragment"
         android:label="@string/strEvento"
-        tools:layout="@layout/fragment_evento" />
+        tools:layout="@layout/fragment_evento" >
+        <action
+            android:id="@+id/action_navEvento_to_fragment_ubicacion"
+            app:destination="@id/fragment_ubicacion" />
+    </fragment>
     <fragment
         android:id="@+id/navArtista"
         android:name="com.example.login.ui.artista.ArtistaFragment"
         android:label="@string/strArtista"
-        tools:layout="@layout/fragment_artista" />
+        tools:layout="@layout/fragment_artista" >
+        <action
+            android:id="@+id/action_navArtista_to_fragment_artistadet"
+            app:destination="@id/fragment_artistadet" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_galeriadet"
+        android:name="com.example.login.fragment_galeriadet"
+        android:label="fragment_galeriadet"
+        tools:layout="@layout/fragment_galeriadet" />
+    <fragment
+        android:id="@+id/fragment_ubicacion"
+        android:name="com.example.login.ui.fragment_ubicacion"
+        android:label="fragment_ubicacion"
+        tools:layout="@layout/fragment_ubicacion" >
+        <action
+            android:id="@+id/action_fragment_ubicacion_to_fragment_ubicaciondet2"
+            app:destination="@id/fragment_ubicaciondet2" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_ubicaciondet2"
+        android:name="com.example.login.ui.fragment_ubicaciondet"
+        android:label="fragment_ubicciondet"
+        tools:layout="@layout/fragment_ubicciondet" />
+    <fragment
+        android:id="@+id/fragment_artistadet"
+        android:name="com.example.login.ui.fragment_artistadet"
+        android:label="fragment_artistadet"
+        tools:layout="@layout/fragment_artistadet" />
+
 </navigation>

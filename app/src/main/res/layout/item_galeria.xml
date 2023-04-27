@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="@dimen/tamTexto3"
+    android:layout_height="@dimen/tam3"
     android:layout_marginBottom="@dimen/margen5"
     app:cardCornerRadius="@dimen/margen5">
     <FrameLayout
@@ -12,7 +12,7 @@
         <ImageView
             android:id="@+id/imgArteGaleria"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/tamTexto3"
+            android:layout_height="@dimen/tam3"
             android:background="@drawable/img_arte2"
             android:scaleType="centerCrop">
         </ImageView>
@@ -86,5 +86,6 @@
         </LinearLayout>
     </FrameLayout>
 </androidx.cardview.widget.CardView>
+
 
 
