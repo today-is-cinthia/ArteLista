@@ -8,10 +8,9 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
-import com.example.artelista.model.evento
 import com.example.login.R
 import com.example.login.model.galeria
-import com.squareup.picasso.Picasso
+
 
 class adaptergaleria(Galerias: ArrayList<galeria>, resource:Int, activity:Activity): RecyclerView.Adapter<adaptergaleria.GaleriaViewHolder>()  {
     //---------------
@@ -34,7 +33,6 @@ class adaptergaleria(Galerias: ArrayList<galeria>, resource:Int, activity:Activi
         holder.tvArtistaGaleria.setText(galeria.getartistagaleria())
         holder.tvPrecioGaleria.setText(galeria.getpreciogaleria())
         holder.tvTituloGaleria.setText(galeria.gettitulogaleria())
-        Picasso.get().load(galeria.getimagengaleria()).into(holder.imgGaleria)
        holder.itemView.setOnClickListener {
             Navigation.findNavController(holder.itemView).navigate(
                 R.id.fragment_galeriadet

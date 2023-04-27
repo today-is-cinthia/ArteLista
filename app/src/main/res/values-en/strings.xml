@@ -15,6 +15,27 @@
     <string name="strGaleria">Gallery</string>
     <string name="strEvento">Events</string>
     <string name="strArtista">Artist</string>
-    <string name="strArte">Sex</string>
+    <string name="strNombreArtista">Rafael Pérez</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="transition_galeriadet">transition_galeriadet</string>
+    <string name="strTituloArte">La Noche Mágica</string>
+    <string name="strLikeMeGusta">8 Likes</string>
+    <string name="strPrecioArte">1,200</string>
+    <string name="strMoneda">C$</string>
+
+    <!-- Pantalla galería detalle -->
+    <string name="strCategoriaGaleria">Oil Painting</string>
+    <string name="strDescripcionGaleria">I was born on Nicaragua´s capital, oil painting has been my passion, my favorite kind of oil art. I was born gifted, later my skills were improving on a professional way. I have 10 years of experience in painting.</string>
+
+    <!-- Pantalla evento -->
+    <string name="strTituloEvento">Oil Spring exposition</string>
+    <string name="strCategoriaEvento">Oil Painting</string>
+    <string name="strUbicacionEvento">Culture Palace</string>
+    <string name="strDireccionEvento">District 1. Managua, Nicaragua</string>
+    <string name="strSitioWebEvento">www.uni.edu.ni</string>
+    <string name="strTelefonoEvento">22705126</string>
+    <string name="strCategoriaArtista">Plastic Artist</string>
+    <string name="strPaisArtista">Nicaragua</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
