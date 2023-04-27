@@ -1,12 +1,15 @@
 package com.example.login.ui.artista
 
 import android.app.Activity
+import android.graphics.Color
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -29,6 +32,13 @@ class ArtistaFragment : Fragment() {
     ): View? {
         fbinding = FragmentArtistaBinding.inflate(inflater, container, false)
         val view :View = binding.root
+
+        val toolbar: androidx.appcompat.widget.Toolbar =  fbinding!!.tbArtista
+
+        (activity as AppCompatActivity).setSupportActionBar(toolbar)
+        toolbar.setTitle(getString(R.string.strArtista))
+        toolbar.setTitleTextColor(Color.WHITE)
+
         val reciclerartista: RecyclerView = fbinding!!.rvArtista
         reciclerartista.layoutManager= LinearLayoutManager(context)
         val adapterartista= adapterartista(getArtistas(), R.layout.item_artista, Activity())

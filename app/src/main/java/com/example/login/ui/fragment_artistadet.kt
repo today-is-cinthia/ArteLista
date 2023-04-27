@@ -1,60 +1,59 @@
 package com.example.login.ui
 
+import android.app.Activity
+import android.app.Dialog
+import android.graphics.Color
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toolbar
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
+import androidx.fragment.app.DialogFragment
+import androidx.navigation.Navigation
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.login.R
+import com.example.login.adapter.adapterartista
+import com.example.login.databinding.FragmentArtistaBinding
+import com.example.login.databinding.FragmentArtistadetBinding
+import com.example.login.model.artista
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [fragment_artistadet.newInstance] factory method to
- * create an instance of this fragment.
- */
-class fragment_artistadet : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
-    }
-
+class fragment_artistadet : DialogFragment() {
+    private var fbinding: FragmentArtistadetBinding?=null
+    private  val binding get() = fbinding!!
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_artistadet, container, false)
+        setStyle(DialogFragment.STYLE_NORMAL, R.style.DialogStyle)
+        fbinding = FragmentArtistadetBinding.inflate(inflater, container, false)
+        val view :View = binding.root
+
+        val toolbar: androidx.appcompat.widget.Toolbar =  fbinding!!.tbArtistaDet
+
+        (activity as AppCompatActivity).setSupportActionBar(toolbar)
+        toolbar.navigationIcon = ContextCompat.getDrawable(view.context, R.drawable.ic_left)
+        toolbar.setTitle("Datos del Artista")
+        toolbar.setTitleTextColor(Color.WHITE)
+        toolbar.setNavigationOnClickListener {
+            dismiss()
+            Navigation.findNavController(it).navigateUp()
+        }
+        return view
     }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment fragment_artistadet.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            fragment_artistadet().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        fbinding = null
+    }
+
+    override fun onStart() {
+        super.onStart()
+        dialog?.window?.setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT)
     }
 }
