@@ -37,6 +37,10 @@
     <string name="strTelefonoEvento">22705126</string>
     <string name="strCategoriaArtista">Plastic Artist</string>
     <string name="strPaisArtista">Nicaragua</string>
+
+    <string name="strAcercaDe">About me</string>
+    <string name="strDescripcionQuienSoy">I was born on Nicaragua´s capital, oil painting has been my passion, my favorite kind of oil art. I was born gifted, later my skills were improving on a professional way. I have 10 years of experience in painting.</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="strCuentaTwitter">\@Cinthia</string>
     <string name="strCiudad">Nicaragua</string>
 </resources>

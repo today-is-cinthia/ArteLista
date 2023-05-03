@@ -54,7 +54,7 @@
         android:id="@+id/fragment_ubicaciondet2"
         android:name="com.example.login.ui.fragment_ubicaciondet"
         android:label="fragment_ubicciondet"
-        tools:layout="@layout/fragment_ubicciondet" />
+        tools:layout="@layout/fragment_ubicaciondet" />
     <fragment
         android:id="@+id/fragment_artistadet"
         android:name="com.example.login.ui.fragment_artistadet"

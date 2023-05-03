@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/tam1">
         <androidx.appcompat.widget.Toolbar
-            android:id="@+id/tbUbiacion"
+            android:id="@+id/tbUbicacion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 

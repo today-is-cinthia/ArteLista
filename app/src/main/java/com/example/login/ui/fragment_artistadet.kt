@@ -8,18 +8,14 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toolbar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.DialogFragment
 import androidx.navigation.Navigation
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.example.login.R
-import com.example.login.adapter.adapterartista
-import com.example.login.databinding.FragmentArtistaBinding
+
 import com.example.login.databinding.FragmentArtistadetBinding
-import com.example.login.model.artista
+
 
 class fragment_artistadet : DialogFragment() {
     private var fbinding: FragmentArtistadetBinding?=null
