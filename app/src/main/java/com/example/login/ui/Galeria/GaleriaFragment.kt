@@ -43,8 +43,8 @@ private var fbinding: FragmentGaleriaBinding? = null
       //------------
       val reciclergaleria :RecyclerView = fbinding!!.rvGaleria
       reciclergaleria.layoutManager = LinearLayoutManager(context)
-      val adaptergaleria = adaptergaleria(getGaleria(), R.layout.item_galeria, Activity())
-      reciclergaleria.adapter = adaptergaleria
+      /*val adaptergaleria = adaptergaleria(getGaleria(), R.layout.item_galeria, Activity())
+      reciclergaleria.adapter = adaptergaleria*/
       return view
   }
 
@@ -53,7 +53,7 @@ override fun onDestroyView() {
         fbinding = null
     }
 
-    fun getGaleria(): ArrayList<galeria> {
+    /*fun getGaleria(): ArrayList<galeria> {
         //--------------
         val Galeria: ArrayList<galeria> = ArrayList<galeria>()
         //-------------
@@ -63,7 +63,7 @@ override fun onDestroyView() {
         Galeria.add(galeria("Maribel Flores", "1,600", "https://artelista.s3.amazonaws.com/obras/fichas/7/4/0/1208970.jpg", "Blossom"))
         Galeria.add(galeria("Nana Tchelidze", "575", "https://artelista.s3.amazonaws.com/obras/big/2/3/8/1245944.jpg", "El Puente"))
         return Galeria
-    }
+    }*/
 
 }
 

@@ -30,9 +30,9 @@ class adaptergaleria(Galerias: ArrayList<galeria>, resource:Int, activity:Activi
     }
     override fun onBindViewHolder(holder: GaleriaViewHolder, position: Int) {
         val galeria: galeria = galerias[position]
-        holder.tvArtistaGaleria.setText(galeria.getartistagaleria())
+        /*holder.tvArtistaGaleria.setText(galeria.getartistagaleria())
         holder.tvPrecioGaleria.setText(galeria.getpreciogaleria())
-        holder.tvTituloGaleria.setText(galeria.gettitulogaleria())
+        holder.tvTituloGaleria.setText(galeria.gettitulogaleria())*/
        holder.itemView.setOnClickListener {
             Navigation.findNavController(holder.itemView).navigate(
                 R.id.fragment_galeriadet

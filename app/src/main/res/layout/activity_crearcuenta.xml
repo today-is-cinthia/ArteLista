@@ -71,6 +71,7 @@
         />
 
     <Button
+        android:id="@+id/btnCrearCuenta"
         android:layout_width="match_parent"
         android:layout_height="@dimen/margen6"
         android:hint="@string/strCrearCuenta"

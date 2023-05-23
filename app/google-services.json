@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "217360958257",
+    "project_id": "artelista-99bf2",
+    "storage_bucket": "artelista-99bf2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:217360958257:android:8af67609c9fd097357a610",
+        "android_client_info": {
+          "package_name": "com.example.login"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "217360958257-joikfrc1h6o0tjtlj1i0gp0q7tff2sv7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.login",
+            "certificate_hash": "c87fa29e544c96997ecd2828ebfa911b44ddf2f3"
+          }
+        },
+        {
+          "client_id": "217360958257-s4sgqp2fpdrdlgo87a0b2mnaq6irjt78.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAL4w-WaVaHQ2qHGTlr658_gU6TjniV-bQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "217360958257-s4sgqp2fpdrdlgo87a0b2mnaq6irjt78.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
