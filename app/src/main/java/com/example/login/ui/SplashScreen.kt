@@ -1,4 +1,4 @@
-package com.example.login
+package com.example.login.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,8 +6,7 @@ import android.os.Bundle
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import android.widget.ImageView
-import android.widget.TextView
-import com.example.login.databinding.ActivityCrearcuentaBinding
+import com.example.login.R
 import com.example.login.databinding.ActivitySplashScreenBinding
 
 class SplashScreen : AppCompatActivity() {

@@ -1,9 +1,6 @@
 package com.example.login.model
 
-class artista(private var nombreartista:String,
-              private var categoriaartista:String,
-              private var paisartista:String)   {
-    fun getNombreArtista():String{return  this.nombreartista}
-    fun getCategoriaArtista():String{return this.categoriaartista}
-    fun getPaisArtista():String{return this.paisartista}
+class artista:java.io.Serializable{var nombreartista:String = ""
+              var categoriaartista:String= ""
+              var paisartista:String = ""
 }

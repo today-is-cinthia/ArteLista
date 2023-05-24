@@ -6,12 +6,12 @@
     app:startDestination="@+id/navHome">
     <fragment
         android:id="@+id/navHome"
-        android:name="com.example.login.ui.home.HomeFragment"
+        android:name="com.example.login.ui.HomeFragment"
         android:label="@string/strHome"
         tools:layout="@layout/fragment_inicio" />
     <fragment
         android:id="@+id/navGaleria"
-        android:name="com.example.login.ui.Galeria.GaleriaFragment"
+        android:name="com.example.login.ui.GaleriaFragment"
         android:label="@string/strGaleria"
         tools:layout="@layout/fragment_galeria" >
         <action
@@ -20,7 +20,7 @@
     </fragment>
     <fragment
         android:id="@+id/navEvento"
-        android:name="com.example.login.ui.evento.EventoFragment"
+        android:name="com.example.login.ui.EventoFragment"
         android:label="@string/strEvento"
         tools:layout="@layout/fragment_evento" >
         <action
@@ -29,7 +29,7 @@
     </fragment>
     <fragment
         android:id="@+id/navArtista"
-        android:name="com.example.login.ui.artista.ArtistaFragment"
+        android:name="com.example.login.ui.ArtistaFragment"
         android:label="@string/strArtista"
         tools:layout="@layout/fragment_artista" >
         <action
@@ -38,7 +38,7 @@
     </fragment>
     <fragment
         android:id="@+id/fragment_galeriadet"
-        android:name="com.example.login.fragment_galeriadet"
+        android:name="com.example.login.ui.fragment_galeriadet"
         android:label="fragment_galeriadet"
         tools:layout="@layout/fragment_galeriadet" />
     <fragment

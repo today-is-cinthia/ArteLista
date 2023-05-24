@@ -13,24 +13,24 @@
         android:theme="@style/Theme.ArteLista"
         tools:targetApi="31" >
         <activity
-            android:name=".activity_menu"
+            android:name=".ui.activity_menu"
             android:exported="false"
             android:label="@string/title_activity_menu"
             android:theme="@style/Theme.ArteLista2" />
         <activity
-            android:name=".activity_crearcuenta"
+            android:name=".ui.activity_crearcuenta"
             android:exported="false"
             android:theme="@style/Theme.ArteLista2" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activity_Login" />
+                android:value=".ui.activity_Login" />
         </activity>
         <activity
-            android:name=".activity_Login"
+            android:name=".ui.activity_Login"
             android:exported="false"
             android:theme="@style/Theme.ArteLista2" />
         <activity
-            android:name=".SplashScreen"
+            android:name=".ui.SplashScreen"
             android:exported="true"
             android:theme="@style/Theme.ArteLista2" >
             <intent-filter>
@@ -40,7 +40,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.MainActivity"
             android:exported="true" />
     </application>
 

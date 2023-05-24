@@ -9,38 +9,40 @@ import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import com.example.login.R
 import com.example.artelista.model.evento
+import com.example.login.adapter.eventoListener
+import com.example.login.adapter.galeriaListener
+import com.example.login.model.galeria
 
-class adapterevento(Eventos: ArrayList<evento>,
-                     resource:Int, activity: Activity):
+class adapterevento(val EventoListener: eventoListener):
     RecyclerView.Adapter<adapterevento.EventoViewHolder>() {
-    private val eventos: ArrayList<evento>
-    private val resource: Int
-    private val activity: Activity
 
-    init {
-        this.eventos= Eventos
-        this.resource= resource
-        this.activity= activity
+    val listEvento= ArrayList<evento>()
 
-    }
     override fun onCreateViewHolder(parent: ViewGroup, viewType:Int): EventoViewHolder{
-        val view = LayoutInflater.from(parent.context).inflate(resource, parent,false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_evento, parent,false)
         return EventoViewHolder (view)
     }
 
     override fun onBindViewHolder(holder:EventoViewHolder, position: Int) {
-        val evento: evento =eventos[position]
-        holder.tvTituloEvento.setText(evento.getTituloEvento())
-        holder.tvCategoriaEvento.setText(evento.getCategoriaEvento())
-        holder.tvHoraEvento.setText(evento.getHoraEvento())
+        val evento: evento = listEvento[position]
+        holder.tvTituloEvento.setText(evento.tituloevento)
+        holder.tvCategoriaEvento.setText(evento.categoriaevento)
+        holder.tvHoraEvento.setText(evento.horaevento)
         holder.itemView.setOnClickListener{
+            EventoListener.onEventoClicked(evento, position)
             Navigation.findNavController(holder.itemView).navigate(R.id.fragment_ubicacion)
         }
 
     }
 
     override fun getItemCount(): Int {
-        return eventos.size
+        return listEvento.size
+    }
+
+    fun updateData(data: List<evento>){
+        listEvento.clear()
+        listEvento.addAll(data!!)
+        notifyDataSetChanged()
     }
 
     inner class EventoViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
