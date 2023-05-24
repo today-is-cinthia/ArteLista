@@ -9,6 +9,7 @@ import com.google.firebase.firestore.FirebaseFirestoreSettings
 //Nombre de las colecciones tal cual existen en Firebase
 const val GALERIA_COLLECTION_NAME="Galeria"
 const val EVENTO_COLLECTION_NAME="Evento"
+const val ARTISTA_COLLECTION_NAME="Artista"
 
 
 class serviceFirestore  {
@@ -48,12 +49,12 @@ class serviceFirestore  {
     }
 
     fun getartista(callback: ICallback<List<artista>>) {
-        CloudFirestore.collection(EVENTO_COLLECTION_NAME)
+        CloudFirestore.collection(ARTISTA_COLLECTION_NAME)
             .orderBy("nombreartista")
             .get()
             .addOnSuccessListener { result ->
                 for(doc in result) {
-                    val list=result.toObjects(evento::class.java)
+                    val list=result.toObjects(artista::class.java)
                     callback.onSuccess(list)
                     break
                 }
