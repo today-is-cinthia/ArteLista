@@ -8,6 +8,7 @@ import androidx.navigation.ui.NavigationUI
 import com.example.artelista.model.evento
 import com.example.login.R
 import com.example.login.databinding.ActivityMenuBinding
+import com.example.login.model.artista
 import com.example.login.model.galeria
 import com.google.firebase.firestore.FirebaseFirestore
 import org.json.JSONArray
@@ -26,7 +27,7 @@ private lateinit var binding: ActivityMenuBinding
         configurarNavegacion()
 
         //--- Carga de datos
-      /* val jsonArtista= JSONArray("[\n" +
+     /* val jsonArtista= JSONArray("[\n" +
                 "            {\n" +
                 "                'nombreartista' : 'Armando Jose Agguirre',\n" +
                 "                'categoriaartista' : 'Oleo',\n" +
@@ -62,16 +63,14 @@ private lateinit var binding: ActivityMenuBinding
 
         for (i in 0 until jsonArtista.length())
         {
-            val objEvento = jsonArtista.get(i) as JSONObject
-            var Evento = evento()
+            val objArtista = jsonArtista.get(i) as JSONObject
+            var Artista = artista()
 
-            Evento.tituloevento = objEvento.getString("nombreartista")
-            Evento.categoriaevento = objEvento.getString("categoriaartista")
-            Evento.horaevento = objEvento.getString("paisartista")
-            fireDB.collection("Artista").document().set(Evento)
+            Artista.nombreartista = objArtista.getString("nombreartista")
+            Artista.categoriaartista = objArtista.getString("categoriaartista")
+            Artista.paisartista = objArtista.getString("paisartista")
+            fireDB.collection("Artista").document().set(Artista)
         }*/
-
-
     }
     protected fun configurarNavegacion()
     {
